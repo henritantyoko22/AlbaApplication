@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Daftar"
+    android:orientation="vertical"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="30dp"
+            android:outlineSpotShadowColor="@color/gainsbro"
+            android:background="@drawable/Daftar">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buat Akun"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Nama Lengkap"
+                android:textColor="@color/bluesmooth"
+                android:textSize="20sp"
+                />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tulis nama lengkap anda"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ID Pengguna"
+                android:textColor="@color/bluesmooth"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tulis ID anda"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/bluesmooth"
+                android:textSize="20sp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tulis email anda"
+                android:inputType="textEmailAddress"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No Telepon"
+                android:textColor="@color/bluesmooth"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/no_telp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Tulis nomor telepon anda"
+                android:inputType="phone" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Kata sandi"
+                android:textColor="@color/bluesmooth"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/kata_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Tulis kata sandi anda"
+                android:inputType="textVisiblePassword" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Konfirmasi Sandi"
+                android:textColor="@color/bluesmooth"
+                android:textSize="20sp"/>
+
+            <EditText
+                android:id="@+id/konfirmasi_sandi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint=" Tulis konfirmasi kata sandi"
+                android:inputType="textVisiblePassword" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saya mengisi identitas ini dengan sebenar-benarnya dan akan menggunakan aplikasi ini secara bijak dan mematuhi hukum menggunakan aplikasi ini"
+                android:layout_marginTop="30dp"
+                />
+
+            <CheckBox
+                android:id="@+id/checkBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Saya Bersedia"
+                android:layout_marginTop="15dp"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daftar"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:background="@color/yellow"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
